@@ -1,156 +1,84 @@
-const colors = require('colors')
+const chalk = require('chalk')
 const fs = require('fs')
 const rs = require('readline-sync')
+const request = require('request')
+
 function start() {
-    s()
+    console.clear()
+    function _0x2257(_0x3be9c8, _0x38516a) { var _0x1618a1 = _0x49d6(); return _0x2257 = function (_0x4df008, _0x417664) { _0x4df008 = _0x4df008 - (-0x11 * -0xcb + 0x872 + -0x1 * 0x1495); var _0x523f99 = _0x1618a1[_0x4df008]; return _0x523f99; }, _0x2257(_0x3be9c8, _0x38516a); } var _0x262204 = _0x2257; (function (_0x29a688, _0x3b433d) { var _0x35a735 = _0x2257, _0x1a6607 = _0x29a688(); while (!![]) { try { var _0x158a98 = parseInt(_0x35a735(0x16b)) / (-0x1171 + 0x1cf1 + -0xb7f) + -parseInt(_0x35a735(0x187)) / (0x13c1 + -0x2239 + -0x73d * -0x2) * (-parseInt(_0x35a735(0x163)) / (0x1c9 * -0xb + -0x1b80 + -0x47 * -0xaa)) + -parseInt(_0x35a735(0x193)) / (-0x2ee + -0x1 * -0x158f + -0x129d) * (parseInt(_0x35a735(0x198)) / (-0x505 + -0x1 * 0x18b2 + 0x1dbc)) + -parseInt(_0x35a735(0x172)) / (-0x49 + 0x9ca + -0x97b) * (-parseInt(_0x35a735(0x197)) / (0xc66 * -0x2 + -0x1453 + 0x2d26 * 0x1)) + -parseInt(_0x35a735(0x177)) / (0x178e + -0x1c7c + 0x4f6) * (-parseInt(_0x35a735(0x184)) / (0x70b + 0x1 * -0xbf1 + 0x4ef)) + parseInt(_0x35a735(0x161)) / (0x2004 + -0x48d * 0x3 + -0x1 * 0x1253) + -parseInt(_0x35a735(0x180)) / (-0x150d + 0x2623 + -0x110b); if (_0x158a98 === _0x3b433d) break; else _0x1a6607['push'](_0x1a6607['shift']()); } catch (_0x2edcab) { _0x1a6607['push'](_0x1a6607['shift']()); } } }(_0x49d6, 0x2058d + 0x3178c + -0x2e33d), console[_0x262204(0x196)]('\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x17f)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x182) + _0x262204(0x185) + _0x262204(0x178) + _0x262204(0x159) + _0x262204(0x17c) + _0x262204(0x17b) + _0x262204(0x18c)) + '\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x17f)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x15c) + _0x262204(0x160) + _0x262204(0x170) + _0x262204(0x192) + _0x262204(0x158) + _0x262204(0x183) + _0x262204(0x18b)) + '\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x17f)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x179) + _0x262204(0x15e) + _0x262204(0x194) + _0x262204(0x169) + _0x262204(0x191) + _0x262204(0x173) + _0x262204(0x181)) + '\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x189)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x175) + _0x262204(0x171) + _0x262204(0x17d) + _0x262204(0x17e) + _0x262204(0x16c) + _0x262204(0x16a) + _0x262204(0x17a)) + '\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x189)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x168) + _0x262204(0x15f) + _0x262204(0x15b) + _0x262204(0x15d) + _0x262204(0x186) + _0x262204(0x199) + _0x262204(0x18f)) + '\x0a' + chalk[_0x262204(0x16d)][_0x262204(0x189)](_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x164) + _0x262204(0x18e) + _0x262204(0x174) + _0x262204(0x162) + _0x262204(0x176) + _0x262204(0x16e) + _0x262204(0x18d)) + (_0x262204(0x165) + _0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x18a)) + chalk[_0x262204(0x16d)][_0x262204(0x188)](_0x262204(0x167) + _0x262204(0x166) + _0x262204(0x16f) + _0x262204(0x190)) + (_0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x15a) + _0x262204(0x195)))); function _0x49d6() { var _0x30acde = ['███╔╝██║\x20╚', '\x20\x20\x20\x20\x20\x20████', '═╝\x20██║\x20\x20\x20\x20', '█╗\x20██║██║\x20', '╚████║╚███', '╗\x20\x20██║██║\x20', '1495840ZEEaVp', '\x20\x20\x20╚═╝\x20\x20\x20\x20', '18kvDkow', '\x20\x20\x20\x20\x20\x20╚═╝\x20', '\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'd#7520\x20(86', 'Dev\x20by\x20lya', '\x20\x20\x20\x20\x20\x20██║\x20', '██╔██║\x20\x20\x20\x20', '█╔══╝\x20\x20██║', '108767PBdlaZ', '██║\x20\x20\x20██║█', 'bold', '══════╝╚═╝', '1946846163', '\x20\x20██║████╗', '██╗██║██║\x20', '4614ThtFpA', '████╗\x20\x20██╔', '═══╝\x20╚═╝\x20\x20', '\x20\x20\x20\x20\x20\x20██║╚', '\x20╚═════╝\x20╚', '1536uSvYnQ', '\x20\x20██╗███╗\x20', '\x20\x20\x20\x20\x20\x20██╔█', '╚██╗██║', '██████╗███', '\x20██████╗\x20█', '\x20\x20██║██║╚█', '█╔╝██║\x20\x20\x20\x20', 'green', '3222571jRaiea', '██╗\x20██║', '\x20\x20\x20\x20\x20\x20███╗', '█╔════╝███', '468OwWsaA', '\x20\x20\x20██╗██╗\x20', '╚██████╔╝█', '70496hNZviV', 'yellow', 'white', '\x20\x20\x20\x20\x20\x20\x20\x20\x20', '█╗\x20\x20██║', '╗\x20\x20\x20██╗', '\x20\x20╚═══╝', '\x20╚═══╝\x20╚══', '\x20╚████║', '370036)', '██║\x20\x20███╗█', '\x20████║\x20\x20\x20\x20', '4oFgFrX', '\x20\x20██║██╔██', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a', 'log', '637zpPVhH', '554785XQNRJS', '██████╗██║', '██╔════╝\x20█', '\x20\x20███╗\x20\x20\x20\x20', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20']; _0x49d6 = function () { return _0x30acde; }; return _0x49d6(); }
+
     console.log(`
- [1] - France      
- [2] - Qatar    
- [3] - Belgique
- [4] - Suisse
- [5] - Royaume Uni
- [6] - Pays Bas
- [7] - Allemagne
- [8] - Espagne
- [9] - Portugal
-`.cyan)
+    [${chalk.bold.yellow('1')}] - ${chalk.bold.cyan('France')}      
+    [${chalk.bold.yellow('2')}] - ${chalk.bold.cyan('Qatar')}      
+    `)
 
-    function s() {
-        var _0x24c01c = _0x5448; (function (_0x2042ca, _0x11e3b8) { var _0x6388f6 = _0x5448, _0x5abe76 = _0x2042ca(); while (!![]) { try { var _0x2f89dc = parseInt(_0x6388f6(0x11a)) / 0x1 * (-parseInt(_0x6388f6(0x129)) / 0x2) + parseInt(_0x6388f6(0x122)) / 0x3 + -parseInt(_0x6388f6(0x125)) / 0x4 * (-parseInt(_0x6388f6(0x124)) / 0x5) + parseInt(_0x6388f6(0x128)) / 0x6 * (parseInt(_0x6388f6(0x130)) / 0x7) + -parseInt(_0x6388f6(0x11f)) / 0x8 * (parseInt(_0x6388f6(0x121)) / 0x9) + -parseInt(_0x6388f6(0x11e)) / 0xa * (parseInt(_0x6388f6(0x12a)) / 0xb) + -parseInt(_0x6388f6(0x120)) / 0xc; if (_0x2f89dc === _0x11e3b8) break; else _0x5abe76['push'](_0x5abe76['shift']()); } catch (_0x3f167d) { _0x5abe76['push'](_0x5abe76['shift']()); } } }(_0x41b6, 0x31805), console[_0x24c01c(0x127)](), console['log'](_0x24c01c(0x12e)['green']), console[_0x24c01c(0x12b)]('###\x20\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20###\x20\x20\x20###\x20\x20\x20\x20##\x20\x20\x20\x20##\x20\x20##\x20\x20\x20\x20\x20\x20\x20###\x20\x20\x20##'['green']), console[_0x24c01c(0x12b)](_0x24c01c(0x11b)[_0x24c01c(0x123)]), console[_0x24c01c(0x12b)](_0x24c01c(0x12d)[_0x24c01c(0x123)]), console['log'](_0x24c01c(0x126)[_0x24c01c(0x123)]), console[_0x24c01c(0x12b)](_0x24c01c(0x12c)[_0x24c01c(0x123)]), console[_0x24c01c(0x12b)](_0x24c01c(0x12f)[_0x24c01c(0x123)]), console[_0x24c01c(0x12b)](_0x24c01c(0x11c)[_0x24c01c(0x11d)])); function _0x5448(_0x472088, _0x37523a) { var _0x41b657 = _0x41b6(); return _0x5448 = function (_0x544849, _0x3dda85) { _0x544849 = _0x544849 - 0x11a; var _0x4f4f76 = _0x41b657[_0x544849]; return _0x4f4f76; }, _0x5448(_0x472088, _0x37523a); } function _0x41b6() { var _0x7eec63 = ['green', '35aVuHvD', '225828TzEOMQ', '##\x20\x20####\x20##\x20\x20\x20\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20\x20\x20\x20##\x20\x20\x20\x20##\x20\x20##\x20\x20\x20\x20\x20\x20\x20##\x20\x20####', 'clear', '114aLtSOd', '11548jfDmyy', '3311yPltRG', 'log', '##\x20\x20\x20###\x20##\x20\x20\x20\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20\x20\x20\x20##\x20\x20\x20\x20##\x20\x20##\x20\x20\x20\x20\x20\x20\x20##\x20\x20\x20###', '##\x20##\x20##\x20##\x20\x20\x20\x20\x20##\x20##\x20###\x20##\x20\x20\x20\x20##\x20\x20\x20####\x20######\x20\x20\x20##\x20##\x20##', '##\x20\x20\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20\x20\x20\x20\x20######\x20\x20\x20########\x20##\x20\x20\x20\x20##', '##\x20\x20\x20\x20##\x20\x20#######\x20\x20##\x20\x20\x20\x20\x20##\x20\x20\x20\x20\x20######\x20\x20\x20########\x20##\x20\x20\x20\x20##', '17654GqlUyW', '37JEhMDU', '####\x20\x20##\x20##\x20\x20\x20\x20\x20##\x20####\x20####\x20\x20\x20\x20##\x20\x20\x20\x20\x20\x20\x20\x20##\x20\x20\x20\x20\x20\x20\x20####\x20\x20##', '\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5c\x5c\x20By\x20lyad#7520\x20(861946846163370036)\x20//', 'brightYellow', '6630tKdtck', '16ssBchJ', '643908WwosJU', '761148FfCUVU', '1186932XrmezY']; _0x41b6 = function () { return _0x7eec63; }; return _0x41b6(); }
-    }
+    const country = rs.question(`[${chalk.bold.magenta('?')}] - Choix du pays : `)
+    const count = rs.question(`[${chalk.bold.magenta('?')}] - Nombre de numero : `)
 
-    const country = rs.question("=> Choix : ".brightMagenta)
-    const count = rs.question("=> Choisir le nombre de numero que tu souhaite generer : ".brightMagenta)
-
-    let i = 0
     if (country === '1') {
-        console.log('=> Génération en cours...'.brightRed)
+        France(count)
 
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genFrance()
-            fs.appendFileSync('./output/france.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '2') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genQatar()
-            fs.appendFileSync('./output/qatar.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '3') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genBelgique()
-            fs.appendFileSync('./output/belgique.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '4') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genSuisse()
-            fs.appendFileSync('./output/suisse.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '5') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genRoyaume()
-            fs.appendFileSync('./output/royaume uni.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '6') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genPaysBas()
-            fs.appendFileSync('./output/pays bas.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '7') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genAllemagne()
-            fs.appendFileSync('./output/allemagne.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '8') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genEspagne()
-            fs.appendFileSync('./output/espagne.txt', num + '\n')
-            i++
-        }, 0.05)
-    }
-
-    if (country === '9') {
-        console.log('=> Génération en cours...'.brightRed)
-
-        setInterval(() => {
-            if (i >= count) {
-                console.log(`=> ${count} numéro(s) ont été généré avec succés.`.green)
-                process.exit(1)
-            }
-            const num = genPortugal()
-            fs.appendFileSync('./output/portugal.txt', num + '\n')
-            i++
-        }, 0.05)
+    } else if (country === '2') {
+        Qatar(count)
     }
 }
 
 start()
+
+function France(count) {
+    let i = 0
+    setInterval(() => {
+        if (i >= count) {
+            console.log(`[${chalk.bold.green('+')}] - ${count} numéro(s) ont été généré avec succés.`)
+            process.exit(1)
+        }
+        const num = genFrance()
+        const num2 = genFrance().replace('+33', '')
+        request.get(`https://messente.com/messente-api/number-lookup/?phone_number=%2B33${num2}`, { json: true }, (err, res, body) => {
+            if (body.countryName === 'France') {
+                if (body.originalCarrierName === '') {
+                    console.log(`[${chalk.bold.red('-')}] - 0${num2}`)
+                    fs.appendFileSync('./output/France_Invalide.txt', '0' + num2 + '\n')
+                } else {
+                    console.log(`[${chalk.bold.green('+')}] - 0${num2}`)
+                    fs.appendFileSync('./output/France_Valide.txt', '0' + num2 + '\n')
+                }
+            } else {
+                console.log(`[${chalk.bold.red('-')}] - 0${num2}`)
+                fs.appendFileSync('./output/France_Invalide.txt', '0' + num2 + '\n')
+            }
+        })
+        i++
+    }, 150)
+}
+
+function Qatar(count) {
+    let i = 0
+    setInterval(() => {
+        if (i >= count) {
+            console.log(`[${chalk.bold.green('+')}] - ${count} numéro(s) ont été généré avec succés.`)
+            process.exit(1)
+        }
+        const num = genQatar()
+        const num2 = genQatar().replace('+974', '')
+        request.get(`https://messente.com/messente-api/number-lookup/?phone_number=%2B974${num2}`, { json: true }, (err, res, body) => {
+            if (body.countryName === 'Qatar') {
+                if (body.originalCarrierName === '') {
+                    console.log(`[${chalk.bold.red('-')}] - ${num}`)
+                    fs.appendFileSync('./output/Qatar_Invalide.txt', num + '\n')
+                } else {
+                    console.log(`[${chalk.bold.green('+')}] - ${num}`)
+                    fs.appendFileSync('./output/Qatar_Valide.txt', num + '\n')
+                }
+
+            } else {
+                console.log(`[${chalk.bold.red('-')}] - ${num}`)
+                fs.appendFileSync('./output/Qatar_Invalide.txt', num + '\n')
+            }
+        })
+        i++
+    }, 150)
+}
 
 function genFrance(min = 600000000, max = 800000000) {
     let difference = max - min;
@@ -166,60 +94,4 @@ function genQatar(min = 30000000, max = 60000000) {
     ez = Math.floor(ez * difference);
     ez = ez + min;
     return `+974` + ez;
-}
-
-function genBelgique(min = 60000000, max = 90000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+32` + ez;
-}
-
-function genSuisse(min = 200000000, max = 300000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+41` + ez;
-}
-
-function genRoyaume(min = 7000000000, max = 8000000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+44` + ez;
-}
-
-function genPaysBas(min = 500000000, max = 7000000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+31` + ez;
-}
-
-function genAllemagne(min = 100000000, max = 300000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+49` + ez;
-}
-
-function genEspagne(min = 900000000, max = 1000000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+34` + ez;
-}
-
-function genPortugal(min = 200000000, max = 300000000) {
-    let difference = max - min;
-    let ez = Math.random();
-    ez = Math.floor(ez * difference);
-    ez = ez + min;
-    return `+351` + ez;
 }
