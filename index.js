@@ -40,16 +40,17 @@ function France(count) {
                     console.log(`[${chalk.bold.red('-')}] - 0${num2}`)
                     fs.appendFileSync('./output/France_Invalide.txt', '0' + num2 + '\n')
                 } else {
-                    console.log(`[${chalk.bold.green('+')}] - 0${num2}`)
-                    fs.appendFileSync('./output/France_Valide.txt', '0' + num2 + '\n')
+                    console.log(`[${chalk.bold.green('+')}] - 0${num2} (${body.originalCarrierName})`)
+                    fs.appendFileSync('./output/France_Valide.txt', '0' + num2 + ' ' + `[${body.originalCarrierName}]` + '\n')
                 }
+                
             } else {
                 console.log(`[${chalk.bold.red('-')}] - 0${num2}`)
                 fs.appendFileSync('./output/France_Invalide.txt', '0' + num2 + '\n')
             }
         })
         i++
-    }, 150)
+    }, 100)
 }
 
 function Qatar(count) {
@@ -65,19 +66,19 @@ function Qatar(count) {
             if (body.countryName === 'Qatar') {
                 if (body.originalCarrierName === '') {
                     console.log(`[${chalk.bold.red('-')}] - ${num}`)
-                    fs.appendFileSync('./output/Qatar_Invalide.txt', num + '\n')
+                    fs.appendFileSync('./output/Qatar_Invalide.txt', num2 + '\n')
                 } else {
-                    console.log(`[${chalk.bold.green('+')}] - ${num}`)
-                    fs.appendFileSync('./output/Qatar_Valide.txt', num + '\n')
+                    console.log(`[${chalk.bold.green('+')}] - ${num} (${body.originalCarrierName})`)
+                    fs.appendFileSync('./output/Qatar_Valide.txt', num2 + ' ' + `[${body.originalCarrierName}]` + '\n')
                 }
 
             } else {
                 console.log(`[${chalk.bold.red('-')}] - ${num}`)
-                fs.appendFileSync('./output/Qatar_Invalide.txt', num + '\n')
+                fs.appendFileSync('./output/Qatar_Invalide.txt', num2 + '\n')
             }
         })
         i++
-    }, 150)
+    }, 100)
 }
 
 function genFrance(min = 600000000, max = 800000000) {
