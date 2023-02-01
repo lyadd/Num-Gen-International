@@ -1,2 +1,2 @@
 # Num-Gen-International
-Permets de générer des numéros de téléphone international.
+Permets de générer et de check des numéros de téléphone international avec leurs opérateurs.
